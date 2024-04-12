@@ -1,2 +1,2 @@
 # Site-SIEEL
- Repositório utilizado pelo grupo de infraestrutura da X SIEEL para o desenvolvimento do site de maneira distribuída
+ Repositório utilizado pela pasta de infraestrutura da X SIEEL para o desenvolvimento do site de maneira distribuída
