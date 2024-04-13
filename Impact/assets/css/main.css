@@ -306,7 +306,7 @@ section {
 }
 
 .header .logo img {
-  max-height: 40px;
+  max-height: 70px;
   margin-right: 6px;
 }
 
@@ -1973,6 +1973,7 @@ section {
 
 .hero .icon-box .title {
   font-weight: 700;
+  margin-top: 40px;
   margin-bottom: 15px;
   font-size: 24px;
 }
@@ -1990,6 +1991,10 @@ section {
   font-size: 48px;
   line-height: 1;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.hero .icon-box .image {
+  height: 90px;
 }
 
 .hero .icon-box:hover {
