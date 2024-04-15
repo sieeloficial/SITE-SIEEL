@@ -738,25 +738,30 @@ section {
 # Clients Section
 --------------------------------------------------------------*/
 .clients {
-  padding: 40px 0;
-}
-
-.clients .swiper {
   padding: 10px 0;
 }
 
-.clients .swiper-slide img {
+.clients .swiper {
+  padding: 100px 0;
+}
+
+#clients .clients-slider .swiper-wrapper .swiper-slide img {
+  /* width: 500px !important; /* ou qualquer outro valor que seja adequado */
+  /* height: auto !important; */ 
   transition: 0.3s;
 }
 
+
+
 .clients .swiper-slide img:hover {
-  transform: scale(1.1);
+  transform: scale(3);
 }
 
 .clients .swiper-pagination {
   margin-top: 20px;
   position: relative;
 }
+
 
 .clients .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
