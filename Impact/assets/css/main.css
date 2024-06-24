@@ -293,7 +293,8 @@ section {
   transition: all 0.5s;
   z-index: 997;
   height: 90px;
-  background-color: var(--color-primary);
+  background-color: #00796b;
+  /* Altera cor da topbar com a logo da SIEEL */
 }
 
 .header.sticked {
@@ -1891,7 +1892,7 @@ section {
 }
 
 .hero p {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgb(255, 255, 255);
   font-weight: 400;
   margin-bottom: 30px;
 }
@@ -2600,7 +2601,7 @@ section {
 
 .footer .footer-info .logo img {
   max-height: 40px;
-  margin-right: 60px;
+  margin-right: 6px;
 }
 
 .footer .footer-info .logo span {
