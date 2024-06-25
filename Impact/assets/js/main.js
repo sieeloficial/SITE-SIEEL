@@ -290,5 +290,31 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     aos_init();
   });
-
 });
+
+/**
+ * Switch schedule based on the selected day
+ */
+  function showCronogramaSIEEL(day) {
+    // Esconder todos os conteúdos
+    var contents = document.querySelectorAll('.content-day');
+    contents.forEach(function(content) {
+      content.style.display = 'none';
+    });
+
+    // Remover a classe ativa de todos os botões
+    var buttons = document.querySelectorAll('.date-selector button');
+    buttons.forEach(function(button) {
+      button.classList.remove('active');
+    });
+
+    // Mostrar o conteúdo correspondente ao dia clicado
+    document.getElementById(day).style.display = 'block';
+
+    // Adicionar a classe ativa ao botão clicado
+    event.target.classList.add('active');
+  }
+
+
+
+
