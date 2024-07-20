@@ -2810,6 +2810,8 @@ section {
 
 .footer .footer-links {
   margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer .footer-links ul {
@@ -2820,7 +2822,7 @@ section {
 
 .footer .footer-links ul li {
   padding: 10px 0;
-  display: flex;
+  display: flexbox;
   align-items: center;
 }
 
@@ -2831,8 +2833,12 @@ section {
 .footer .footer-links ul a {
   color: rgba(255, 255, 255, 0.7);
   transition: 0.3s;
-  display: inline-block;
   line-height: 1;
+}
+
+.footer .footer-links li strong {
+  display: inline-block;
+  margin-right: 5px;
 }
 
 .footer .footer-links ul a:hover {
@@ -2852,4 +2858,128 @@ section {
 
 .footer .credits a {
   color: #fff;
+}
+
+/* Centralizar conteúdo em dispositivos móveis e empilhar colunas verticalmente */
+@media (max-width: 768px) {
+  .footer .container {
+    display: flex; /* Certifique-se de que o container seja flexível */
+    flex-direction: column; /* Empilha os itens verticalmente */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer .footer-info,
+  .footer .footer-links,
+  .footer .footer-contact {
+    display: flex;
+    flex-direction: column; /* Empilha os ícones e spans verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    text-align: center; /* Centraliza o texto */
+    margin: 10px 0; /* Mantém o espaçamento padrão */
+    flex: 1 1 100%; /* Faz com que cada coluna ocupe 100% da largura em dispositivos móveis */
+  }
+
+  .footer .footer-info p {
+    margin-bottom: 20px; /* Diminui a margem inferior do parágrafo */
+    padding: 0;
+  }
+
+  .footer .footer-info span,
+  .footer .footer-links span,
+  .footer .footer-contact span {
+    display: inline-block; /* Faz com que o span se comporte como um bloco em linha */
+    margin: 0 auto; /* Centraliza o bloco em linha horizontalmente */
+  }
+
+  .footer .social-links {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente os ícones */
+    padding: 0;
+    margin-top: 0; /* Remove margem superior para aproximar da footer-info */
+    margin-bottom: 10px; /* Adiciona margem inferior se necessário */
+  }
+
+  .footer .social-links a {
+    margin-right: 10px; /* Ajuste o valor para o espaçamento entre ícones, se necessário */
+  }
+
+  /* Remover margem inferior adicional se houver */
+  .footer .social-links a:last-child {
+    margin-right: 0;
+  }
+}
+
+  .foooter .footer-info {
+  margin-bottom: 0; /* Remove a margem inferior */
+}
+
+/* Centralizar conteúdo em dispositivos tablet e manter colunas lado a lado */
+@media (min-width: 769px) and (max-width: 1199px) {
+  .footer .container {
+    display: flex; /* Certifique-se de que o container seja flexível */
+    flex-direction: row; /* Mantém os itens lado a lado */
+    justify-content: space-between; /* Espaço entre os itens */
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer .footer-info,
+  .footer .footer-links,
+  .footer .footer-contact {
+    display: flex;
+    flex-direction: column; /* Mantém a direção da coluna dentro de cada item */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    text-align: center; /* Centraliza o texto */
+    margin: 0 10px; /* Ajuste o valor para o espaçamento entre colunas, se necessário */
+    flex: 1 1 auto; /* Ajusta o tamanho dos itens automaticamente */
+  }
+
+  .footer .footer-info p {
+    margin-bottom: 20px; /* Diminui a margem inferior do parágrafo */
+    padding: 0;
+  }
+
+  .footer .footer-info span,
+  .footer .footer-links span,
+  .footer .footer-contact span {
+    display: inline-block; /* Faz com que o span se comporte como um bloco em linha */
+    margin: 0 auto; /* Centraliza o bloco em linha horizontalmente */
+  }
+
+  .footer .social-links {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente os ícones */
+    padding: 0;
+    margin-top: 0; /* Remove margem superior para aproximar da footer-info */
+    margin-bottom: 10px; /* Adiciona margem inferior se necessário */
+  }
+
+  .footer .social-links a {
+    margin-right: 10px; /* Ajuste o valor para o espaçamento entre ícones, se necessário */
+  }
+
+  /* Remover margem inferior adicional se houver */
+  .footer .social-links a:last-child {
+    margin-right: 0;
+  }
+
+  .footer .footer-info {
+    margin-bottom: 0; /* Remove a margem inferior */
+  }
+}
+
+.footer .image-link img {
+  width: 125px;  /* Defina a largura desejada */
+  height: auto;  /* Mantém a proporção da imagem */
+  padding-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+.footer .image-link img {
+    width: 30%;  /* Ajuste a largura para 100% da largura do contêiner em dispositivos móveis */
+  }
 }
