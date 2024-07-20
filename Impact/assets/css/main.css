@@ -2983,3 +2983,194 @@ section {
     width: 30%;  /* Ajuste a largura para 100% da largura do contêiner em dispositivos móveis */
   }
 }
+
+/*
+.header.transparent {
+  background-color: rgba(11, 113, 84, 0.5); /* Cor de fundo com transparência
+}*/
+
+/* Custom CSS for CronogramaSIEEL Page*/
+.cronogramaSIEEL-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.cronogramaSIEEL-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cronogramaSIEEL-header h2 {
+  margin: 0;
+}
+
+.date-selector {
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  padding: 10px;
+}
+
+.date-selector button {
+  background-color: #f0f0f0;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  width: 100px;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.date-selector button.active {
+  background-color: #0c8e44;
+}
+
+.date-selector button:focus {
+  outline: none;
+}
+
+.event-card h3 {
+  margin-top: 0;
+}
+
+.event-card .event-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.event-card .event-info i {
+  color: #28a745;
+}
+
+.event-card .event-info span {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.evento {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  padding: 30px;
+  width: calc(100% - 20px); /* Ajuste a largura para considerar as margens */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 10px 0px 10px; /* Define margens específicas para cada lado */
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  gap: 10px;
+}
+
+.titulo-2 h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.conteudo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1250px;
+  background-color: white;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.content-day {
+  transition: all 0.3s ease;
+}
+
+.palestrante, .descricao, .local-hora {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  flex: 1 1 30%;
+  margin: 10px;
+}
+
+.palestrante img {
+  display: block;
+  margin: 0 auto;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.palestrante span {
+  display: block;
+  margin-top: 10px;
+}
+
+.local-hora {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.local-hora p {
+  margin: 0;
+  padding: 0;
+}
+
+.local-hora span {
+  margin-top: 10px;
+}
+
+.badge.bg-success {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.local-hora iframe {
+  display: block;
+  margin: 0 auto;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+/* Estilo para dispositivos móveis */
+@media (max-width: 768px) {
+  .conteudo {
+    display: block;
+  }
+
+  .titulo {
+    text-align: center;
+  }
+
+  .palestrante, .descricao, .local-hora {
+    flex: 1 1 100%;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .local-hora {
+    text-align: center;
+  }
+
+  .local-hora iframe {
+    width: 100%;
+    height: auto;
+  }
+}
