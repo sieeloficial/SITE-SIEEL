@@ -1152,6 +1152,13 @@ section {
     font-size: 14px;
     margin: 0 5px;
   }
+  
+
+  .portfolio {
+   scale: 1;
+  } 
+
+  
 }
 
 .portfolio .portfolio-wrap {
@@ -1159,12 +1166,16 @@ section {
   border-radius: 10px;
   height: 100%;
   overflow: hidden;
+  margin: 0px;
 }
 
 .portfolio .portfolio-wrap img {
   transition: 0.3s;
   position: relative;
   z-index: 1;
+  width: 100%;
+  height: 300px; /* Define a height for uniform image sizes */
+  object-fit: cover; /* Ensures images cover the defined dimensions */
 }
 
 .portfolio .portfolio-wrap .portfolio-info {
@@ -1200,6 +1211,7 @@ section {
 .portfolio .portfolio-wrap:hover img {
   transform: scale(1.1);
 }
+
 
 /*--------------------------------------------------------------
 # Portfolio Details Section
@@ -3172,5 +3184,37 @@ section {
   .local-hora iframe {
     width: 100%;
     height: auto;
+  }
+  }
+
+  /*CARROSSEL*/
+  .carousel-item {
+    width: 100%;
+    height: 500px; /* Defina a altura desejada */
+    object-fit: cover; /* Mantém a proporção da imagem, cobrindo toda a área */
+  }
+
+  /* Estilos para os controles personalizados do carrossel */
+  .custom-carousel-control {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .custom-control-icon {
+    width: 20px;
+    height: 20px;
+    fill: #fff;
+  }
+
+  /* Estilos específicos para modo smartphone */
+@media (max-width: 767px) {
+  .carousel-item {
+    padding-top: 70px; /* Adiciona padding-top para modo smartphone */
+    height: auto; /* Ajusta a altura para auto */
   }
 }

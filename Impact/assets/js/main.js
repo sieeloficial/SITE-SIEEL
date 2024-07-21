@@ -204,8 +204,9 @@ document.addEventListener('DOMContentLoaded', () => {
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
-    }
-  });
+    },
+    
+    });
 
   /**
    * Init swiper slider with 3 slides at once in desktop view
@@ -326,3 +327,10 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
  */
+
+document.addEventListener('DOMContentLoaded', function () {
+  var carrosselExample = new bootstrap.Carousel(document.querySelector('#carrosselExample'), {
+    interval: 50, // Tempo entre slides
+    ride: 'carousel'
+  });
+});
