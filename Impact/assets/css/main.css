@@ -1114,6 +1114,124 @@ section {
 }
 
 /*--------------------------------------------------------------
+# imagem-eventos Section
+--------------------------------------------------------------*/
+.imagem-eventos .testimonial-wrap {
+  width: 100%;
+  display: flex; /* Adicionado para centralizar */
+  flex-direction: column; /* Adicionado para centralizar */
+  align-items: center; /* Adicionado para centralizar */
+  text-align: center; /* Adicionado para centralizar o texto */
+}
+
+.imagem-eventos .testimonial-item {
+  width: 100%;
+  position: relative;
+  display: flex; /* Adicionado para centralizar */
+  flex-direction: column; /* Adicionado para centralizar */
+  align-items: center; /* Adicionado para centralizar */
+  text-align: center; /* Adicionado para centralizar o texto */
+}
+
+.imagem-eventos .testimonial-item .testimonial-img {
+  width: 100%;
+  margin-right: 0; /* Ajustado para remover a margem direita */
+  margin-bottom: 15px; /* Adicionado para espaçar da descrição */
+  display: block; /* Garantir que seja um bloco */
+}
+
+.imagem-eventos .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.imagem-eventos .swiper-pagination .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+}
+
+.imagem-eventos .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--color-primary);
+}
+
+@media (max-width: 767px) {
+  .imagem-eventos .testimonial-wrap {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .imagem-eventos .testimonial-item {
+    width: 100%;
+    height: auto;
+  }
+
+  .imagem-eventos .testimonial-item .testimonial-img {
+    position: static;
+    left: auto;
+  }
+}
+
+
+/*--------------------------------------------------------------
+# Carrossel Section
+--------------------------------------------------------------*/
+.carrossel .testimonial-wrap {
+  padding-left: 10px;
+  display: flex; /* Adicionado para centralizar */
+  flex-direction: column; /* Adicionado para centralizar */
+  align-items: center; /* Adicionado para centralizar */
+  text-align: center; /* Adicionado para centralizar o texto */
+}
+
+.carrossel .testimonial-item {
+  position: relative;
+  display: flex; /* Adicionado para centralizar */
+  flex-direction: column; /* Adicionado para centralizar */
+  align-items: center; /* Adicionado para centralizar */
+  text-align: center; /* Adicionado para centralizar o texto */
+}
+
+.carrossel .testimonial-item .testimonial-img {
+  width: 100%;
+  margin-right: 0; /* Ajustado para remover a margem direita */
+  display: block; /* Garantir que seja um bloco */
+}
+
+.carrossel .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.carrossel .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+}
+
+.carrossel .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--color-primary);
+}
+
+@media (max-width: 767px) {
+  .carrossel .testimonial-wrap {
+    padding-left: 0;
+  }
+
+  .carrossel .testimonial-item {
+    padding: 30px;
+    margin: 15px;
+  }
+
+  .carrossel .testimonial-item .testimonial-img {
+    position: static;
+    left: auto;
+  }
+}
+
+/*--------------------------------------------------------------
 # Portfolio Section
 --------------------------------------------------------------*/
 .portfolio .portfolio-flters {
@@ -2047,7 +2165,7 @@ section {
   width: 100%;
   position: relative;
   background: var(--color-primary);
-  padding: 60px 0 0 0;
+  padding: 30px 0 0 0;
 }
 
 @media (min-width: 1365px) {
@@ -3188,6 +3306,10 @@ section {
   }
 
   /*CARROSSEL*/
+  .carousel{
+  padding: 0;
+  }
+
   .carousel-item {
     width: 100%;
     height: 500px; /* Defina a altura desejada */
@@ -3214,7 +3336,12 @@ section {
   /* Estilos específicos para modo smartphone */
 @media (max-width: 767px) {
   .carousel-item {
-    padding-top: 70px; /* Adiciona padding-top para modo smartphone */
+    padding-top: 0px; /* Adiciona padding-top para modo smartphone */
     height: auto; /* Ajusta a altura para auto */
   }
+}
+
+.about p {
+  text-align: justify;
+  line-height: 2; /* Aumenta o espaçamento entre as linhas para 1.5 */
 }
