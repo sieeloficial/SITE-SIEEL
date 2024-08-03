@@ -628,10 +628,11 @@ section {
   text-align: center;
 }
 
-.about .call-us h4 {
+.about h4 {
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 5px;
+  box-shadow: var(--GREEN-SIEEL);
 }
 
 .about .call-us p {
@@ -785,7 +786,7 @@ section {
 }
 
 .clients .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--color-primary);
+  background-color: var(--GREEN-SIEEL);
 }
 
 /*--------------------------------------------------------------
@@ -957,6 +958,7 @@ section {
   background: #fff;
   height: 100%;
   border-radius: 10px;
+  box-shadow: 0 0 5px rgb(182, 180, 180);;
 }
 
 .services .service-item .icon {
@@ -1008,15 +1010,15 @@ section {
 .services .service-item .readmore {
   margin-top: 15px;
   display: inline-block;
-  color: var(--color-primary);
+  color: var(--GREEN-SIEEL);
 }
 
 .services .service-item:hover .icon:before {
-  background: #00b6a1;
+  background: var(--GREEN-SIEEL);
 }
 
 .services .service-item:hover h3 {
-  border-color: var(--color-primary);
+  border-color: var(--GREEN-SIEEL);
 }
 
 /*--------------------------------------------------------------
@@ -1066,7 +1068,7 @@ section {
 
 .testimonials .testimonial-item .quote-icon-left,
 .testimonials .testimonial-item .quote-icon-right {
-  color: #009d8b;
+  color: var(--GREEN-SIEEL);
   font-size: 26px;
   line-height: 0;
 }
@@ -1103,7 +1105,7 @@ section {
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--color-primary);
+  background-color: var(--GREEN-SIEEL);
 }
 
 @media (max-width: 767px) {
@@ -1132,6 +1134,7 @@ section {
   flex-direction: column; /* Adicionado para centralizar */
   align-items: center; /* Adicionado para centralizar */
   text-align: center; /* Adicionado para centralizar o texto */
+  align-content: center;
   padding: 20px;
 }
 
@@ -1149,6 +1152,11 @@ section {
   margin-right: 0; /* Ajustado para remover a margem direita */
   margin-bottom: 15px; /* Adicionado para espaçar da descrição */
   display: block; /* Garantir que seja um bloco */
+  align-items: center; /* Adicionado para centralizar */
+  text-align: center; /* Adicionado para centralizar o texto */
+  z-index: 1;
+  height: 300px; /* Define a height for uniform image sizes */
+  object-fit: cover; /* Ensures images cover the defined dimensions */
 }
 
 .imagem-eventos .swiper-pagination {
@@ -1157,14 +1165,14 @@ section {
 }
 
 .imagem-eventos .swiper-pagination .swiper-pagination-bullet {
-  width: 8px;
-  height: 8px;
+  width: 12px;
+  height: 12px;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
 }
 
 .imagem-eventos .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--color-primary);
+  background-color: var(--GREEN-SIEEL);
 }
 
 .imagem-eventos .container {
@@ -1172,7 +1180,7 @@ section {
 }
 
 #imagem-eventos{
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 
@@ -1180,17 +1188,21 @@ section {
 @media (max-width: 767px) {
   .imagem-eventos .testimonial-wrap {
     width: 100%;
-    padding-left: 0;
+    padding: 0;
   }
 
   .imagem-eventos .testimonial-item {
+    z-index: 1;
     width: 100%;
-    height: auto;
+    height: 300px; /* Define a height for uniform image sizes */
+    object-fit: cover; /* Ensures images cover the defined dimensions */
   }
 
   .imagem-eventos .testimonial-item .testimonial-img {
-    position: static;
-    left: auto;
+    z-index: 1;
+    width: 100%;
+    height: 300px; /* Define a height for uniform image sizes */
+    object-fit: cover; /* Ensures images cover the defined dimensions */;
   }
 }
 
@@ -1235,14 +1247,14 @@ section {
 }
 
 .carrossel .swiper-pagination .swiper-pagination-bullet {
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
 }
 
 .carrossel .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--color-primary);
+  background-color: var(--GREEN-SIEEL);
 }
 
 @media (max-width: 767px) {
@@ -1259,6 +1271,9 @@ section {
     position: static;
     left: auto;
     width: 100%;
+  }
+  #carrossel{
+    padding: 0px;
   }
 }
 
@@ -1285,7 +1300,7 @@ section {
 
 .portfolio .portfolio-flters li:hover,
 .portfolio .portfolio-flters li.filter-active {
-  color: var(--color-primary);
+  color: var(--GREEN-SIEEL);
 }
 
 .portfolio .portfolio-flters li:first-child {
@@ -1298,15 +1313,41 @@ section {
 
 @media (max-width: 575px) {
   .portfolio .portfolio-flters li {
-    font-size: 14px;
+    font-size: 15px;
     margin: 0 5px;
+    font-weight: 600;
+    
   }
-  
+
+  .portfolio .portfolio-flters{
+    font-size: 15px;
+    margin: 0 5px;
+    font-weight: 600;
+    border: 1px solid #c3c3c3;
+    margin-bottom: 10px;
+  }
+
 
   .portfolio {
-   scale: 1;
+   scale: 0.99;
   } 
 
+  .portfolio .portfolio-wrap img {
+    transition: 0.3s;
+    position: relative;
+    z-index: 1;
+    width: 50%;
+    height: 200px; /* Define a height for uniform image sizes */
+    object-fit: cover; /* Ensures images cover the defined dimensions */
+  }
+
+  .portfolio .portfolio-wrap {
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    height: 80%;
+    overflow: hidden;
+    margin: 0px;
+  }
   
 }
 
@@ -1360,6 +1401,11 @@ section {
 .portfolio .portfolio-wrap:hover img {
   transform: scale(1.1);
 }
+
+a i.bi-linkedin {
+  font-size: 20px; /* Ajuste o valor conforme necessário */
+}
+
 
 
 /*--------------------------------------------------------------
@@ -1461,7 +1507,7 @@ section {
 }
 
 .portfolio-details .portfolio-info .btn-visit:hover {
-  background: #009d8b;
+  background: var(--GREEN-SIEEL);
 }
 
 .portfolio-details .portfolio-description h2 {
@@ -1505,7 +1551,7 @@ section {
 
 .portfolio-details .portfolio-description .testimonial-item .quote-icon-left,
 .portfolio-details .portfolio-description .testimonial-item .quote-icon-right {
-  color: #009d8b;
+  color: var(--GREEN-SIEEL);
   font-size: 26px;
   line-height: 0;
 }
@@ -1766,7 +1812,7 @@ section {
 .faq .accordion-item {
   border: 0;
   margin-bottom: 20px;
-  box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.06);
+  box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 }
 
@@ -1795,11 +1841,11 @@ section {
   padding-right: 10px;
   font-size: 20px;
   line-height: 0;
-  color: #025d00;
+  color: var(--GREEN-SIEEL);
 }
 
 .faq .accordion-button:not(.collapsed) {
-  color: var(--color-primary);
+  color: var(--GREEN-SIEEL);
   border-bottom: 0;
   box-shadow: none;
 }
@@ -1879,7 +1925,7 @@ section {
 # Socialmedia Section
 --------------------------------------------------------------*/
 .Socialmedia .info-container {
-  background-color: var(--color-primary);
+  background-color: var(--color-secondary);
   height: 100%;
   padding: 20px;
   border-radius: 10px 0 0 10px;
@@ -1929,7 +1975,7 @@ section {
 
 .Socialmedia .info-item:hover i {
   background: #fff;
-  color: var(--color-primary);
+  color: var(--GREEN-SIEEL);
 }
 
 .Socialmedia .php-email-form {
@@ -2022,6 +2068,8 @@ section {
   background: rgba(0, 131, 116, 0.8);
 }
 
+
+
 @keyframes animate-loading {
   0% {
     transform: rotate(0deg);
@@ -2036,7 +2084,6 @@ section {
 # Contact Section
 --------------------------------------------------------------*/
 .contact .info-container {
-  background-color: #05ff00;
   height: 100%;
   padding: 20px;
   border-radius: 10px 0 0 10px;
@@ -2050,6 +2097,10 @@ section {
   padding: 20px;
   border-radius: 10px;
   color: #fff;
+}
+.contact .info-item:hover i {
+  background: #fff;
+  color: var(--GREEN-SIEEL);
 }
 
 .contact .info-item:last-child {
@@ -2084,100 +2135,7 @@ section {
   font-size: 14px;
 }
 
-.contact .info-item:hover i {
-  background: #fff;
-  color: var(--color-primary);
-}
 
-.contact .php-email-form {
-  width: 100%;
-  height: 100%;
-  background: #fff;
-  box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
-  padding: 30px;
-  border-radius: 0 10px 10px 0;
-}
-
-.contact .php-email-form .form-group {
-  padding-bottom: 8px;
-}
-
-.contact .php-email-form .error-message {
-  display: none;
-  color: #fff;
-  background: #df1529;
-  text-align: left;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .php-email-form .error-message br+br {
-  margin-top: 25px;
-}
-
-.contact .php-email-form .sent-message {
-  display: none;
-  color: #fff;
-  background: #059652;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .php-email-form .loading {
-  display: none;
-  background: #fff;
-  text-align: center;
-  padding: 15px;
-}
-
-.contact .php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid #059652;
-  border-top-color: #fff;
-  animation: animate-loading 1s linear infinite;
-}
-
-.contact .php-email-form input,
-.contact .php-email-form textarea {
-  border-radius: 0;
-  box-shadow: none;
-  font-size: 14px;
-}
-
-.contact .php-email-form input[type=text],
-.contact .php-email-form input[type=email],
-.contact .php-email-form textarea {
-  padding: 12px 15px;
-}
-
-.contact .php-email-form input[type=text]:focus,
-.contact .php-email-form input[type=email]:focus,
-.contact .php-email-form textarea:focus {
-  border-color: var(--color-primary);
-}
-
-.contact .php-email-form textarea {
-  padding: 10px 12px;
-}
-
-.contact .php-email-form button[type=submit] {
-  background: var(--color-primary);
-  border: 0;
-  padding: 14px 45px;
-  color: #fff;
-  transition: 0.4s;
-  border-radius: 50px;
-}
-
-.contact .php-email-form button[type=submit]:hover {
-  background: rgba(0, 131, 116, 0.8);
-}
 
 @keyframes animate-loading {
   0% {
@@ -2261,6 +2219,19 @@ section {
 }
 
 @media (max-width: 640px) {
+  .hero .container{
+    padding: 8px;
+  }
+  .col-lg-7{
+    padding: 0px;
+  }
+  
+  .d-flex .inicio {
+    display: flex;
+    flex-direction: column; /* Alinha os itens em coluna */
+    align-items: center;
+  }
+
   .hero h2 {
     font-size: 36px;
   }
@@ -2270,12 +2241,23 @@ section {
   }
 
   .hero .btn-get-started {
+    display: flex;
     font-size: 14px;
     padding: 12px 35px; /* Ajuste do padding para dispositivos móveis */
+    width:100%;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 20px;
   }
 
   .hero .btn-watch-video {
+    display: flex;
     font-size: 14px;
+    padding:12px; /* Ajuste do padding para dispositivos móveis */
+    width:100%;
+    text-align: center;
+    justify-content: center;
+    margin-left: 0px;
   }
 
   .hero .btn-watch-video i {
@@ -3213,6 +3195,7 @@ section {
   padding: 20px;
 }
 
+
 .cronogramaSIEEL-header {
   text-align: center;
   margin-bottom: 20px;
@@ -3233,19 +3216,23 @@ section {
   background-color: #f0f0f0;
   color: rgb(0, 0, 0);
   border: none;
-  padding: 10px 20px;
+  padding: 20px 20px;
   font-weight: bold;
   text-align: center;
   cursor: pointer;
-  width: 100px;
+  width: 150px;
   line-height: 1.5;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: 1px solid #6c757d;
+  margin-left: 10px;
+
 }
 
 .date-selector button.active {
-  background-color: #0c8e44;
+  background-color: var(--GREEN-SIEEL);
+  color: #FFFFFF;
 }
 
 .date-selector button:focus {
@@ -3264,7 +3251,7 @@ section {
 }
 
 .event-card .event-info i {
-  color: #28a745;
+  color: var(--GREEN-SIEEL);
 }
 
 .event-card .event-info span {
@@ -3276,7 +3263,7 @@ section {
 .evento {
   background-color: rgb(255, 255, 255);
   color: black;
-  padding: 30px;
+  padding-top: 30px;
   width: calc(100% - 20px); /* Ajuste a largura para considerar as margens */
   text-align: center;
   display: flex;
@@ -3304,6 +3291,7 @@ section {
   background-color: white;
   border-radius: 5px;
   margin-bottom: 15px;
+  text-align: center;
 }
 
 .content-day {
@@ -3327,11 +3315,15 @@ section {
   object-fit: cover;
   margin-bottom: 20px;
   margin-top: 20px;
+  border: 1px solid #919191;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .palestrante span {
   display: block;
   margin-top: 10px;
+  font-weight: 600;
 }
 
 .local-hora {
@@ -3347,14 +3339,25 @@ section {
 
 .local-hora span {
   margin-top: 10px;
+  width: 100%;
+  height: auto;
+  font-weight: 600;
 }
 
-.badge.bg-success {
+.palestra-badge {
   display: inline-block;
-  width: 50%;
+  padding: 4.2px 7.8px; /* Conforme as medidas no screenshot */
+  font-size: 12px; /* Ajuste conforme necessário */
+  font-family: "Open Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: bold;
   text-align: center;
-  box-sizing: border-box;
+  border-radius: 20px; /* Bordas arredondadas */
+  background-color: var(--GREEN-SIEEL); /* Cor de fundo verde */
+  color: #FFFFFF; /* Cor do texto branco */
+  width: 70%;
+  margin: 0 auto
 }
+
 
 .local-hora iframe {
   display: block;
@@ -3364,32 +3367,76 @@ section {
   object-fit: cover;
   margin-bottom: 20px;
   margin-top: 20px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 /* Estilo para dispositivos móveis */
 @media (max-width: 768px) {
+  .container{
+    scale: 1;
+  }
+
+  .date-selector {
+    display: flex;
+    justify-content: center;
+    gap: 0px;
+    padding: 0px;
+  }
+  
+  .date-selector button {
+    background-color: #f0f0f0;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 10px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    width: 110px;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #6c757d;
+    margin-left: 0px;
+  }
+
   .conteudo {
     display: block;
   }
 
   .titulo {
     text-align: center;
+    padding-top: 10px;
   }
 
   .palestrante, .descricao, .local-hora {
     flex: 1 1 100%;
     margin: 0;
-    margin-bottom: 20px;
+    padding: 0px;
+    margin-bottom: 0px;
+    scale: 0.9;
   }
 
   .local-hora {
     text-align: center;
   }
 
+  .local-hora span {
+    margin-top: 0px;
+  }
+
   .local-hora iframe {
     width: 100%;
     height: auto;
   }
+
+  .evento{
+    margin-top: 0px;
+    padding: 0px;
+  }
+
   }
 
   /*CARROSSEL*/
@@ -3425,6 +3472,10 @@ section {
   .carousel-item {
     padding-top: 0px; /* Adiciona padding-top para modo smartphone */
     height: auto; /* Ajusta a altura para auto */
+  }
+
+  #carrossel .carrossel{
+    padding: 0px;
   }
 }
 
