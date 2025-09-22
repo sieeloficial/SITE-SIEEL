@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+  <head>
+      <meta charset="utf-8">
+      <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+      <title>SIEEL</title>
+      <meta content="" name="description">
+      <meta content="" name="keywords">
+
+    <!-- Favicons -->
+      <a href="index.html">
+        <link href="assets/img/Geral/logo.png" rel="icon">
+      </a>
+    <!-- <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+
+    <!-- Google Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+      <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+      <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+      <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+      <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+      
+
+    <!-- Template Main CSS File -->
+      <link href="assets/css/main.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- =======================================================
+    * Template Name: Impact
+    * Template URL: https://bootstrapmade.com/impact-bootstrap-business-website-template/
+    * Updated: Mar 17 2024 with Bootstrap v5.3.3
+    * Author: BootstrapMade.com
+    * License: https://bootstrapmade.com/license/
+    ======================================================== -->
+  </head>
+
+  <body>
+    <!-- ======= Header ======== -->
+      <header id="header" class="header d-flex align-items-center">
+
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <!-- Uncomment the line below if you also wish to use an image logo -->
+            <img src="assets/img/Geral/logo.png" alt="Logo SIEEL">
+            <!-- <h1>SIEEL</h1> -->
+          </a>
+          <!-- Navbar -->
+          <nav id="navbar" class="navbar">
+            <ul>
+              <li><a href="/Impact/pages/cronograma.html">Cronograma</a></li>
+              <li><a href="/Impact/pages/organizacao.html">Organização</a></li>
+              <!--<li><a href="/Impact/pages/patrocinadores.html">Patrocinadores</a></li>-->
+              <!--<li class="dropdown"><a href="/Impact/pages/outros_eventos.html"><span>Outros eventos</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>-->
+                <!--<ul>
+                  <li><a href="/Impact/pages/mulheres_em_foco.html">Mulheres em Foco</a></li>
+                  <li><a href="http://www1.sel.eesc.usp.br/sancathon2022/" target="_blank">SancaThon</a></li>
+                  <li><a href="/Impact/pages/outros_eventos.html">Inpulsa</a></li>
+                </ul>-->
+              </li>
+              <li><a href="/Impact/pages/contato.html">Contato</a></li>
+            </ul>
+          </nav>
+          <!-- Navbar -->
+
+          <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+          <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+        </div>
+      </header>
+    <!-- End Header -->
+
+    <section id="hero" class="hero">
+      <div class="container position-relative">
+        <div class="row gy-5" data-aos="fade-in">
+    
+          <main id="main">
+            <div class="container">
+              <div class="row">
+                
+                <div class="col-lg-5 order-1 order-lg-2 d-flex flex-column justify-content-center text-center text-lg-start">
+                <center>
+                  <h2>Bem-vindo à <span>SIEEL</span></h2>
+                  <p>Semana de Integração da Engenharia Elétrica <br><br>Desde 2015 integrando estudantes da USP e UFSCar ao universo de possibilidades da enegenharia elétrica</p>
+                </center>
+                  <div class="d-flex inicio justify-content-center "><!-- justify-content-lg-start <-- Adiciona o comando à esquerda para adicionar mais uma coluna junto ao botão "inscreva-se"-->
+                    <a href="https://estudante.startcarreiras.com/eventos/636?utm_source=indic-parceiro&utm_medium=link-parceiro&utm_campaign=fair-636" 
+                      class="btn-get-started" 
+                      target="_blank" 
+                      onclick="return confirmRedirect();">
+                      Inscreva-se
+                    </a>
+                    <!-- 
+                    <a href="https://www.youtube.com/watch?v=jgSOFc_dI5o&ab_channel=Sieel-SemanadaIntegra%C3%A7%C3%A3odaEngenhariaEl%C3%A9trica" class="glightbox btn-watch-video d-flex align-items-center">
+                      <i class="bi bi-play-circle"></i><span>Conheça um pouco mais!</span>
+                    </a>
+                    -->
+                    <a href="https://linktr.ee/SIEELoficial?utm_source=linktree_profile_share&ltsid=19f565c4-c751-4028-b9e3-5c49d6c7b6c0" class="btn-watch-video d-flex align-items-center" target="_blank">
+                      SIEEL Store
+                    </a>
+
+                  </div>                
+                </div>
+              
+                <div class="col-lg-7 order-2 order-lg-2">
+                        <!-- ======= Imagem Eventos ======= -->
+                      <section id="carrossel" class="carrossel">
+                        <div class="container" data-aos="fade-up">
+                          <div class="slides-1 swiper" data-aos="fade-up" data-aos-delay="100">
+                            <div class="swiper-wrapper">
+
+                              <div class="swiper-slide">
+                                <div class="testimonial-wrap">
+                                  <div class="testimonial-item">                                    
+                                      <img src="assets/img/Geral/Imagem_de_anuncio_da_x_sieel.png" class="testimonial-img" alt="">
+                                      <p class="legend"></p>
+                                  </div>
+                                </div>
+                              </div><!-- End testimonial item -->
+
+                              <div class="swiper-slide">
+                                <div class="testimonial-wrap">
+                                  <div class="testimonial-item">
+                                      <img src="assets/img/fotos_eventos/IMG_3842.jpg" class="testimonial-img" alt="">
+                                      <p class="legend">Minicurso de fabricação de PCIs (2023).</p>
+                                  </div>
+                                </div>
+                              </div><!-- End testimonial item -->
+
+                              <div class="swiper-slide">
+                                <div class="testimonial-wrap">
+                                  <div class="testimonial-item">
+                                      <img src="assets/img/fotos_eventos/mascostes_dos_grupos_participantes_no_connect.jpg" class="testimonial-img" alt="">
+                                      <p class="legend">Mascotes das extracurriculares presentes no SIEEL Connect (2023).</p>
+                                  </div>
+                                </div>
+                              </div><!-- End testimonial item -->
+
+                              <div class="swiper-slide">
+                                <div class="testimonial-wrap">
+                                  <div class="testimonial-item">
+                                      <img src="assets/img/fotos_eventos/depedida_do_homem_sieel.jpg" class="testimonial-img" alt="">
+                                      <p class="legend">Membro da SIEEL é efetivado, após o estágio (2023).</p>
+                                  </div>
+                                </div>
+                              </div><!-- End testimonial item -->
+
+                              <div class="swiper-slide">
+                                <div class="testimonial-wrap">
+                                  <div class="testimonial-item">    
+                                      <img src="assets/img/fotos_eventos/margirius_na_ix_sieel_2.JPG" class="testimonial-img" alt="">
+                                      <p class="legend">MarGirius na IX SIEEL (2023).</p>
+                                  </div>
+                                </div>
+                              </div><!-- End testimonial item -->
+
+                              <div class="swiper-slide">
+                                <div class="testimonial-wrap">
+                                  <div class="testimonial-item">                                    
+                                      <img src="assets/img/fotos_eventos/SIEELCONNECT_muvuca.png" class="testimonial-img" alt="">
+                                      <p class="legend">SIEEL connect (2019).</p>
+                                  </div>
+                                </div>
+                              </div><!-- End testimonial item -->
+
+                            </div>
+                            <div class="swiper-pagination"></div>
+                          </div>
+
+                        </div>
+                      </section><!-- End Testimonials Section -->
+                    </div>
+                </div>
+              
+            </div>
+          </main>
+        </div>
+      </div>
+    
+      <div class="icon-boxes position-relative">
+        <div class="container position-relative">
+          <div class="row">
+            <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon-box">
+                <img class="image" src="assets/img/Geral/cronograma.png" alt="">
+                <h4 class="title"><a href="/Impact/pages/cronograma.html" class="stretched-link">Cronograma</a></h4>
+              </div>
+            </div><!--End Icon Box -->
+    
+            <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon-box">
+                <img class="image" src="assets/img/Geral/manual.png" alt="Manual">
+                <h4 class="title">
+                  <a href="assets/img/Geral/Guia%20do%20Participante%20-%20X%20SIEEL.pdf" target="_blank" class="stretched-link" download="Guia_do_Participante_SIEEL.pdf">Guia do Participante</a>
+                </h4>
+              </div>
+            </div><!--End Icon Box -->            
+    
+            <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="icon-box">
+                <img class="image" src="assets/img/Geral/USP.png" alt="">
+                <h4 class="title"><a href="https://eesc.usp.br/" target="_blank" class="stretched-link">Universidade de São Paulo</a></h4>
+              </div>
+            </div><!--End Icon Box -->
+    
+            <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="500">
+              <div class="icon-box">
+                <img class="image" src="assets/img/Geral/UFSCar.png" alt="">
+                <h4 class="title"><a href="https://www.dee.ufscar.br/" target="_blank" class="stretched-link">Universidade Federal de São Carlos</a></h4>
+              </div>
+            </div><!--End Icon Box -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ======= Sobre nós ======= -->
+      <main id="main">
+
+        <!-- ======= About Us Section ======= -->
+        <section id="about" class="about">
+          <div class="container" data-aos="fade-up">
+
+            <div class="section-header">
+              <h2>Sobre nós</h2>
+            </div>
+
+            <div class="row gy-4">
+              <h3>Semana de Integração da Engenharia Elétrica</h3>
+              <div class="col-lg-6 order-lg-1 order-1">
+                <p class="indented">A SIEEL - Semana de Integração da Engenharia Elétrica - é uma união feita em 2015 pela SEMEL (Semana da Elétrica UFSCar) com o Integra Elétrica da USP. Sendo um dos eventos acadêmicos mais importantes do Brasil para a divulgação científica e tecnológica da área. O evento é organizado por estudantes do curso de Engenharia Elétrica da Escola de Engenharia de São Carlos da Universidade de São Paulo (EESC- USP) e da Universidade Federal de São Carlos (UFSCar).</p>
+                <img src="assets/img/Geral/EquipeSIEEL.png" class="img-fluid" alt="">
+
+              </div>
+              <div class="col-lg-6 order-lg-2 order-2 video-section d-flex flex-column align-items-center">
+            
+                <div class="imagem position-relative mt-4 order-2 order-md-2">
+                  <img src="assets/img/Geral/tbt_sieel.png" class="img-fluid" alt="" id="thumbnail">
+                  <video id="videoPlayer" class="img-fluid" controls style="display: none;">
+                    <source src="assets/videos/TBT SIEEL HORIZONTAL.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                  <div id="playButton" class="play-btn">
+                  
+                  </div>
+                </div>
+        
+                <p class="order-1 order-md-2 indented">O objetivo do evento é mostrar as diferentes áreas e oportunidades na aplicação da Engenharia Elétrica, conectando os estudantes atuais e futuros com as empresas relevantes do setor. Acreditamos no potencial transformador dessa área e buscamos inspirar e engajar os participantes da SIEEL a explorarem todo o seu universo de possibilidades.</p>
+                
+                </div>
+              </div>
+            </div>
+          </div>
+          <h4 class="text-center">Veja algumas fotos do nosso evento!</h4>
+        </section>
+        <!-- End About Us Section -->
+
+
+        <!-- ======= Imagem Eventos ======= -->
+        <section id="imagem-eventos" class="imagem-eventos">
+          <div class="container" data-aos="fade-up">
+            <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                  <div class="testimonial-wrap">
+                    <div class="testimonial-item">
+                      <div class="d-flex align-items-center">
+                        <img src="assets/img/fotos_eventos/visita_a_ambev.JPG" class="testimonial-img flex-shrink-0" alt="">
+                      </div>
+                      <p class="legend">Visita técnica à AMBEV, Agudos-SP (2023).</p>
+                    </div>
+                  </div>
+                </div><!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                  <div class="testimonial-wrap">
+                    <div class="testimonial-item">
+                      <div class="d-flex align-items-center">
+                        <img src="assets/img/fotos_eventos/sieel_connect_ix_sieel.JPG" class="testimonial-img flex-shrink-0" alt="">
+                      </div>
+                      <p class="legend">SIEEL Connect, IX SIEEL (2023).</p>
+                    </div>
+                  </div>
+                </div><!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                  <div class="testimonial-wrap">
+                    <div class="testimonial-item">
+                      <div class="d-flex align-items-center">
+                        <img src="assets/img/fotos_eventos/Minicurso_Prototipagem.png" class="testimonial-img flex-shrink-0" alt="">
+                      </div>
+                      <p class="legend">Minicurso de fabricação de PCIs (2023).</p>
+                    </div>
+                  </div>
+                </div><!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                  <div class="testimonial-wrap">
+                    <div class="testimonial-item">
+                      <div class="d-flex align-items-center">
+                        <img src="assets/img/fotos_eventos/GameNight_QuandoAsCoisasEramSimples.png" class="testimonial-img flex-shrink-0" alt="">
+                      </div>
+                      <p class="legend">Gamenight (2019).</p>
+                    </div>
+                  </div>
+                </div><!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                  <div class="testimonial-wrap">
+                    <div class="testimonial-item">
+                      <div class="d-flex align-items-center">
+                        <img src="assets/img/fotos_eventos/margirius_na_ix_sieel.JPG" class="testimonial-img flex-shrink-0" alt="">
+                      </div>
+                      <p class="legend">MarGirius na IX SIEEL (2023).</p>
+                    </div>
+                  </div>
+                </div><!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                  <div class="testimonial-wrap">
+                    <div class="testimonial-item">
+                      <div class="d-flex align-items-center">
+                        <img src="assets/img/fotos_eventos/visita_a_cpqd.jpg" class="testimonial-img flex-shrink-0" alt="">
+                      </div>
+                      <p class="legend">Visita técnica à CPQD, Campinas-SP (2023).</p>
+                    </div>
+                  </div>
+                </div><!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                  <div class="testimonial-wrap">
+                    <div class="testimonial-item">
+                      <div class="d-flex align-items-center">
+                        <img src="assets/img/fotos_eventos/SICEEL_EuFelizaoComMeuChecao.png" class="testimonial-img flex-shrink-0" alt="">
+                      </div>
+                    </div>
+                    <p class="legend">Premiação SICEEL (2023).</p>
+                  </div>
+                </div><!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                  <div class="testimonial-wrap">
+                    <div class="testimonial-item">
+                      <div class="d-flex align-items-center">
+                        <img src="assets/img/fotos_eventos/VT_Globo.png" class="testimonial-img flex-shrink-0" alt="">
+                      </div>
+                      <p class="legend">Visita técnica à Globo, São Paulo-SP (2019).</p>
+                    </div>
+                  </div>
+                </div><!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                  <div class="testimonial-wrap">
+                    <div class="testimonial-item">
+                        <img src="assets/img/fotos_eventos/palestra_do_ceo_da_margirius_ix_sieel.JPG" class="testimonial-img" alt="">
+                        <p class="legend">Palestra do CEO da MarGirius (2023)</p>
+                    </div>
+                  </div>
+                </div><!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                  <div class="testimonial-wrap">
+                    <div class="testimonial-item">
+                      <div class="d-flex align-items-center">
+                        <img src="assets/img/fotos_eventos/visita_ao_sirius.jpg" class="testimonial-img flex-shrink-0" alt="">
+                      </div>
+                      <p class="legend">Visita técnica ao Sirius, Campinas-SP (2023).</p>
+                    </div>
+                  </div>
+                </div><!-- End testimonial item -->
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+
+          </div>
+        </section>
+        <!-- End Imagem Eventos -->
+
+        <!-- ======= Our Services Section ======= -->
+        <section id="services" class="services sections-bg">
+          <div class="container" data-aos="fade-up">
+
+            <div class="section-header">
+              <h2>Nossas atividades</h2>
+              <p>Durante a semana do evento são desenvolvidas diversas atividades que fazer da SIEEL a maior Semana acadêmica do Brasil</p>
+            </div>
+
+            <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">
+
+              <div class="col-lg-4 col-md-6">
+                <div class="service-item  position-relative">
+                  <div class="icon">
+                    <i class="bi bi-activity"></i>
+                  </div>
+                  <h3>Palestras</h3>
+                  <p>As palestras têm como objetivo colocar um convidado para apresentar um determinado assunto.</p>
+                </div>
+              </div><!-- End Service Item -->
+
+              <div class="col-lg-4 col-md-6">
+                <div class="service-item position-relative">
+                  <div class="icon">
+                    <i class="bi bi-broadcast"></i>
+                  </div>
+                  <h3>Minicursos</h3>
+                  <p>Pretende-se com os minicursos dar oportunidade aos alunos de iniciar o uso de alguma ferramenta.</p>
+                </div>
+              </div><!-- End Service Item -->
+
+              <div class="col-lg-4 col-md-6">
+                <div class="service-item position-relative">
+                  <div class="icon">
+                    <i class="bi bi-easel"></i>
+                  </div>
+                  <h3>Rodas de Conversa</h3>
+                  <p>As rodas de conversa visam a promoção de um ambiente colaborativo e participativo entre os alunos e convidados para a discussão de um determinado tópico.</p>
+                </div>
+              </div><!-- End Service Item -->
+
+              <div class="col-lg-4 col-md-6">
+                <div class="service-item position-relative">
+                  <div class="icon">
+                    <i class="bi bi-bounding-box-circles"></i>
+                  </div>
+                  <h3>SIEELCONNECT</h3>
+                  <p>O SIEELCONNECT é um ambiente onde empresas e projetos de extensão podem ter um contato direto com os alunos.</p>
+                </div>
+              </div><!-- End Service Item -->
+
+              <div class="col-lg-4 col-md-6">
+                <div class="service-item position-relative">
+                  <div class="icon">
+                    <i class="bi bi-calendar4-week"></i>
+                  </div>
+                  <h3>Viagens Técnicas</h3>
+                  <p>As viagens técnicas são atividades práticas onde os alunos podem ver em primeira mão o funcionamento de uma planta.</p>
+                </div>
+              </div><!-- End Service Item -->
+
+              <div class="col-lg-4 col-md-6">
+                <div class="service-item position-relative">
+                  <div class="icon">
+                    <i class="bi bi-chat-square-text"></i>
+                  </div>
+                  <h3>SICEEL</h3>
+                  <p>O SICEEL é o Simpósio de Iniciação Científica da Engenharia Elétrica onde os alunos podem expor seus trabalhos para uma banca, onde receberão avaliações e dicas sobre seus trabalhos.</p>
+                  <a href="https://soac.eesc.usp.br/index.php/SICEEL/xisiceel" target="_blank" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div><!-- End Service Item -->
+
+            </div>
+
+          </div>
+        </section><!-- End Our Services Section -->
+
+        <!--====== Another Events =======-->
+        <section class="outros-eventos">
+          <div class="section-header">
+            <h2>Outros Eventos</h2>
+            <p>Além da SIEEL, semana acadêmica, a SIEEL como grupo, também organiza outros eventos, conheça um pouco mais sobre cada um logo abaixo</p>
+          </div>
+
+          <div class="slideshow-container">
+            <div class="slides-wrapper">
+              <div class="slide">
+                <div class="slide-content">
+                  <div class="column image-column">
+                    <img src="assets/img/Outros_eventos/Mef_small.png" alt="Imagem 1">
+                  </div>
+                  <div class="column text-column">
+                    <h2>Mulheres em Foco (MEF)</h2>
+                    <p>Devido à histórica predominância masculina nos cursos de exatas, como engenharia, amplamente resultado do desestímulo para que meninas sigam nas ciências exatas, o projeto Mulheres em Foco (MEF) surge como uma iniciativa para reverter esse cenário. O MEF promove visibilidade e espaço para mulheres nas ciências, oferecendo minicursos e palestras ministrados por elas, com o objetivo de inspirar e encorajar outras a seguirem nesse caminho.</p>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="slide">
+                <div class="slide-content">
+                  <div class="column image-column">
+                    <img src="assets/img/Outros_eventos/Inpulsa_small.png" alt="Imagem 2">
+                  </div>
+                  <div class="column text-column">
+                    <h2>Projeto Inpulsa</h2>
+                    <p>O projeto Inpulsa, uma iniciativa da SIEEL, destaca a patrocinadora Master do evento, oferecendo à empresa 16 horas para ministrar conteúdo aos alunos. A organização fica a cargo da equipe da SIEEL, proporcionando um contato mais próximo e prolongado entre a empresa e os estudantes, o que facilita melhores decisões em relação a futuras contratações de estagiários.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="slide">
+                <div class="slide-content">
+                  <div class="column image-column">
+                    <img src="assets/img/Outros_eventos/Sancathon.png" alt="Imagem 3">
+                  </div>
+                  <div class="column text-column">
+                    <h2>Sancathon</h2>
+                    <p>O Sancathon é um hackathon em que é proposto um desafio e os participantes têm que planejar alguma solução no prazo de 72h e há uma premiação para as melhores soluções. Esse projeto é realizado em parceria com o Núcleo de empreendedorismo da USP (NEU).</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            <!-- Botões de navegação -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+        
+        </section>
+        <!--End Another Events-->
+
+        <!-- ======= Testimonials Section ======= -->
+        <!--<section id="testimonials" class="testimonials">
+          <div class="container" data-aos="fade-up">
+
+            <div class="section-header">
+              <h2>Opniões</h2>
+              <p>Veja o que participantes e patrocinadores já disseram sobre a SIEEL</p>
+            </div>
+
+            <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                  <div class="testimonial-wrap">
+                    <div class="testimonial-item">
+                      <div class="d-flex align-items-center">
+                        <img src="assets/img/team/João Vinicius.jpg" class="testimonial-img flex-shrink-0" alt="">
+                        <div>
+                          <h3>Saul Goodman</h3>
+                          <h4>Ceo &amp; Founder</h4>
+                          <div class="stars">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                        <i class="bi bi-quote quote-icon-right"></i>
+                      </p>
+                    </div>
+                  </div>-->
+                </div><!-- End testimonial item -->
+
+                <!--<div class="swiper-slide">
+                  <div class="testimonial-wrap">
+                    <div class="testimonial-item">
+                      <div class="d-flex align-items-center">
+                        <img src="assets/img/team/Adrielle.jpg" class="testimonial-img flex-shrink-0" alt="">
+                        <div>
+                          <h3>Sara Wilsson</h3>
+                          <h4>Designer</h4>
+                          <div class="stars">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                        <i class="bi bi-quote quote-icon-right"></i>
+                      </p>
+                    </div>
+                  </div>-->
+                </div><!-- End testimonial item -->
+
+                <!--<div class="swiper-slide">
+                  <div class="testimonial-wrap">
+                    <div class="testimonial-item">
+                      <div class="d-flex align-items-center">
+                        <img src="assets/img/team/Pedro Lucas.jpg" class="testimonial-img flex-shrink-0" alt="">
+                        <div>
+                          <h3>Jena Karlis</h3>
+                          <h4>Store Owner</h4>
+                          <div class="stars">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                        <i class="bi bi-quote quote-icon-right"></i>
+                      </p>
+                    </div>
+                  </div>-->
+                </div><!-- End testimonial item -->
+
+                <!--<div class="swiper-slide">
+                  <div class="testimonial-wrap">
+                    <div class="testimonial-item">
+                      <div class="d-flex align-items-center">
+                        <img src="assets/img/team/André Camilo.jpg" class="testimonial-img flex-shrink-0" alt="">
+                        <div>
+                          <h3>Matt Brandon</h3>
+                          <h4>Freelancer</h4>
+                          <div class="stars">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        Ter coordenado a SIEEL foi definitivamente uma das melhores experiências que experienciei na universidade. O trabalho intenso em equipe me ensinou lições valiosos sobre liderança e me trouxe networking profissional com as maiores empresas do país que levo para vida toda!
+                        <i class="bi bi-quote quote-icon-right"></i>
+                      </p>
+                    </div>
+                  </div>-->
+                </div><!-- End testimonial item -->
+
+                <!--<div class="swiper-slide">
+                  <div class="testimonial-wrap">
+                    <div class="testimonial-item">
+                      <div class="d-flex align-items-center">
+                        <img src="assets/img/team/Tiago Alexandre.jpg" class="testimonial-img flex-shrink-0" alt="">
+                        <div>
+                          <h3>John Larson</h3>
+                          <h4>Entrepreneur</h4>
+                          <div class="stars">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        Como participante do evento, pude explorar conteúdos que iam além da sala de aula. Como Coordenadora da equipe, tive a oportunidade e a grande responsabilidade de organizar o evento – experiência que me permitiu desenvolver competências importantes, além da construção de uma boa rede de contatos. Tudo isso foi fundamental para o início de minha carreira: hoje trabalho na Bosch, empresa excelente que eu tive a chance de conhecer mais sobre e de me aproximar graças à SIEEL.
+                        <i class="bi bi-quote quote-icon-right"></i>
+                      </p>
+                    </div>
+                  </div>-->
+                </div><!-- End testimonial item -->
+
+              <!--</div>
+              <div class="swiper-pagination"></div>
+            </div>
+
+          </div>-->
+        </section><!-- End Testimonials Section -->
+
+      
+    <!-- ======= Patrocinadores ======= -->
+      <section id="patrocinadores" class="patrocinadores">
+        <div class="container" data-aos="fade-up">
+          <div class="section-header">
+            <h2>Patrocinadores</h2>
+          </div>
+          <div class="slides-5 swiper" data-aos="fade-up" data-aos-delay="100">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide ouro">
+                <div class="testimonial-wrap">
+                  <div class="testimonial-item">
+                    <div class="d-flex align-items-center">
+                      <a href="https://www.alura.com.br/" target="_blank">
+                        <img src="assets/img/Logo_empresas/Alura_250.png" class="testimonial-img flex-shrink-0" alt="">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!--<p>Ouro</p>-->
+              </div><!-- End testimonial item -->
+
+              <div class="swiper-slide bronze">
+                <div class="testimonial-wrap">
+                  <div class="testimonial-item">
+                    <div class="d-flex align-items-center">
+                      <a href="https://www.margirius.com.br/" target="_blank">
+                        <img src="assets/img/Logo_empresas/MarGirius_250.png" scale="1.5" class="testimonial-img flex-shrink-0" alt="">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!--<p>Ouro</p>-->
+              </div><!-- End testimonial item -->
+
+              <div class="swiper-slide diamante">
+                <div class="testimonial-wrap">
+                  <div class="testimonial-item">
+                    <div class="d-flex align-items-center">
+                      <a href="https://www.hitachi.com.br/" target="_blank">
+                        <img src="assets/img/Logo_empresas/Hitachi_250.png" class="testimonial-img flex-shrink-0" alt="">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!--<p>Ouro</p>-->
+              </div><!-- End testimonial item -->
+
+              <div class="swiper-slide prata">
+                <div class="testimonial-wrap">
+                  <div class="testimonial-item">
+                    <div class="d-flex align-items-center">
+                      <img src="assets/img/Logo_empresas/Tractian_250.png" class="testimonial-img flex-shrink-0" alt="">
+                    </div>
+                  </div>
+                </div>
+                <!--<p>Ouro</p>-->
+              </div><!-- End testimonial item -->
+
+              <div class="swiper-slide master">
+                <div class="testimonial-wrap">
+                  <div class="testimonial-item">
+                    <div class="d-flex align-items-center">
+                      <a href="https://www.chipus.com.br/" target="_blank">
+                        <img src="assets/img/Logo_empresas/Chipus_250.png" class="testimonial-img flex-shrink-0" alt="">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!--<p>Ouro</p>-->
+              </div><!-- End testimonial item -->
+
+              <div class="swiper-slide bronze">
+                <div class="testimonial-wrap">
+                  <div class="testimonial-item">
+                    <div class="d-flex align-items-center">
+                      <a href="https://www.hyundai.com.br/" target="_blank">
+                        <img src="assets/img/Logo_empresas/Hyundai_250.png" class="testimonial-img flex-shrink-0" alt="">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!--<p>Ouro</p>-->
+              </div><!-- End testimonial item -->
+
+              <div class="swiper-slide bronze">
+                <div class="testimonial-wrap">
+                  <div class="testimonial-item">
+                    <div class="d-flex align-items-center">
+                      <a href="https://www.controlid.com.br/?forcept=1" target="_blank">
+                        <img src="assets/img/Logo_empresas/Control_ID_ 250.png" class="testimonial-img flex-shrink-0" alt="">
+                      </a>      
+                    </div>
+                  </div>
+                </div>
+                <!--<p>Ouro</p>-->
+              </div><!-- End testimonial item -->
+
+              <div class="swiper-slide bronze">
+                <div class="testimonial-wrap">
+                  <div class="testimonial-item">
+                    <div class="d-flex align-items-center">
+                      <a href="https://www.redbull.com/br-pt" target="_blank">
+                        <img src="assets/img/Logo_empresas/Red_bull_250.png" class="testimonial-img flex-shrink-0" alt="">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!--<p>Ouro</p>-->
+              </div><!-- End testimonial item -->
+              
+              <div class="swiper-slide bronze">
+                <div class="testimonial-wrap">
+                  <div class="testimonial-item">
+                    <div class="d-flex align-items-center">
+                      <a href="https://www.b2open.com/" target="_blank">
+                        <img src="assets/img/Logo_empresas/B2open_250.png" class="testimonial-img flex-shrink-0" alt="">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!--<p>Ouro</p>-->
+              </div><!-- End testimonial item -->
+              
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- End Patrocinadores -->
+
+       
+    <!-- ======= Footer ======= -->
+      <footer id="footer" class="footer">
+        <div class="container">
+        <div class="row gy-4">
+            <div class="col-lg-5 col-md-12 footer-info">
+              <a href="index.html" class="image-link">
+                  <img src="assets/img/Geral/logo.png" alt="Logo SIEEL">
+              </a>
+              <h4>Semana de Integração da Engenharia Elétrica</h4>
+              <p>Há 10 anos apresentando e integrando os alunos da USP e UFSCar ao universo de possibilidades da engenharia elétrica.</p>
+              <div class="social-links">
+                  <a href="https://www.instagram.com/sieel.oficial?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
+                  <a href="https://www.linkedin.com/company/sieel/mycompany/" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                  <a href="mailto:sieel@eesc.usp.br" target="_blank" class="email"><i class="bi bi-envelope"></i></a>
+                  <a href="https://www.tiktok.com/@sieel_oficial" target="_blank" class="tiktok"><i class="fab fa-tiktok"></i></a>
+              </div>
+            </div>
+
+            <!--<div class="col-lg-2 col-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Terms of service</a></li>
+                  <li><a href="#">Privacy policy</a></li>
+              </ul>
+            </div>-->
+
+            <div class="col-lg-2 col-6 footer-links">
+              <h4>Contate-nos</h4>
+              <ul>
+                  <li><strong>Endereço:</strong> <a href="https://maps.app.goo.gl/gX469KVAjKmcUxwUA">Av. Trab. São Carlense, 400 - Parque Arnold Schimidt. São Carlos, SP 13566-590</a></li>
+                  <li><strong>Telefone:</strong> <a href="tel:+551833519701">+55 18 998085894</a></li>
+                  <li><strong>E-mail:</strong> <a href="mailto:sieel@eesc.usp.br" target="_blank">sieel@eesc.usp.br</a></li>
+              </ul>
+          </div>          
+        </div>
+        </div>
+
+        <div class="container mt-4">
+        <div class="copyright">
+            &copy; Copyright <strong><span>Impact</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/impact-bootstrap-business-website-template/ -->
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+        </div>
+      </footer>
+    <!-- End Footer -->
+    
+    <!--END-->
+    <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <!--END-->
+
+  </body>
+
+</html>
