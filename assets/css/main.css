@@ -3686,6 +3686,20 @@ a i.bi-linkedin {
   margin: 0 auto
 }
 
+.palestra-badge-orange {
+  display: inline-block;
+  padding: 4.2px 7.8px; /* Conforme as medidas no screenshot */
+  font-size: 12px; /* Ajuste conforme necessário */
+  font-family: "Open Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 20px; /* Bordas arredondadas */
+  background-color: #ee970c; /* Cor de fundo laranja */
+  color: #FFFFFF; /* Cor do texto branco */
+  width: 70%;
+  margin: 0 auto
+}
+
 .palestra-badge-blue {
   display: inline-block;
   padding: 4.2px 7.8px; /* Conforme as medidas no screenshot */
