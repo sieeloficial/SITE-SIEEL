@@ -366,7 +366,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function confirmRedirect() {
-  var userConfirmed = confirm("As incrições nos eventos da X SIEEL serão realizadas na start carreiras, plataforma para a qual você será redirecionado(a), cadastre-se e se inscreva nos eventos da SIEEL, até breve");
+  var userConfirmed = confirm("As incrições nos eventos da XI SIEEL serão realizadas na Even3, plataforma para a qual você será redirecionado(a), cadastre-se e se inscreva nos eventos da SIEEL, até breve");
   
   // Se o usuário clicar em "OK", o link será seguido
   if (userConfirmed) {
